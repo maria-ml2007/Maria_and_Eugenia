@@ -1,4 +1,5 @@
 #МИКРОКАЗИК
+import random
 start = int(100)
 bln_c = start
 a = 0
