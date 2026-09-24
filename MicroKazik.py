@@ -5,10 +5,9 @@ start = input("Do you want to play the game? (Yes/No) ")
 if start == "No":
     print("Goodbye!")
 else:
-
-a = random.randint(1,9)
-b = random.randint(1,9)
-c = random.randint(1,9)
+    a = random.randint(1,9)
+    b = random.randint(1,9)
+    c = random.randint(1,9)
 
 print(a, b, c)
 
