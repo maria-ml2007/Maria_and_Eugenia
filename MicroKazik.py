@@ -13,7 +13,7 @@ f = input()
 while f == 'true':
     print('Сыграть?', 'Напишите да или нет')
     q = str(input())
-    bln_c = int(bln_c) #  целые числа
+    bln_c = int(bln_c)
     a = random.randint(1, 9)
     b = random.randint(1, 9)
     c = random.randint(1, 9)
@@ -22,7 +22,7 @@ while f == 'true':
         bln_c = 2 * bln_c
         print('ПОЗДРАВЛЯЕМ! Ваш счёт удвоен! Текущий баланс', bln_c)
     elif a == b or a == c or b == c:
-        bln_c == 1.5 * bln_c
+        bln_c = (bln_c + (bln_c * 0.5))
         print('ПОЗДРАВЛЯЕМ! Ваш счёт вырос на 50%! Текущий баланс', bln_c)
     else:
         bln_c = 0.5 * bln_c
@@ -31,3 +31,4 @@ while f == 'true':
         print('Недостаточно средств, пополните счёт')
     elif q == 'нет':
         print('Игра завершена')
+        break
